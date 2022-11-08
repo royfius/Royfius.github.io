@@ -1,2 +1,2 @@
-# royalferguson.github.io
-Roy's Personal Website
+# akaRoyfius.github.io
+A site for Career Building collateral and discussion
