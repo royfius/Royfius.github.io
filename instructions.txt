@@ -1,0 +1,24 @@
+EDITING
+
+To run locally, simply open index.html (landing page) in browser. Markup for all other pages is found in main.html. Each page is contained within <main></main> which are shown/hidden based on navigation. Also, the menu uses links to these sections so that browser navigation works properly (refresh, back, etc work as expected.)
+
+To hide pages, simply comment out the <a> (link) in the <nav> section at the top of main.html. 
+
+To add new pages, create a new <main> and give it a unique id and add a new <a> to the navigation section under the appropriate category. Category names and menu text can be changed, but the links' href attributes must match the id of the corresponding <main>. The "Overview" page is shown by default. All other <main> tags must include style="display:none" so that they are hidden on page load. For example:
+
+<a href="#newPage">New Page</a>
+...
+<main id="newPage" style="display:none">
+  <!-- page content goes here -->
+</main>
+
+There are examples of all the style classes found in main.html as it is. Most notably, images should include either .i2 (portrait) or .i3 (landscape) classes, as well as either .left or .right if you want them to float to the right/left of the text around them. For example:
+
+<img src="img\example.jpg" class="i3 right" alt="example image">
+
+<p>'s and <section>'s have added spacing around them and are left-justified. You can also add .centered or .indent classes to paragraphs as needed. Lists are automatically indented.
+
+
+GITHUB PAGES
+
+Once you've uploaded these files to your GitHub repo's main branch, go to Settings (top right), then Pages (found in the menu on the left.) Make sure you have "Deploy from a branch" selected under Source, and "main" and "root" selected under Branch. Once you hit save, you should see a notice at the top of the Settings page saying "Your site is live at ..." with a link to your site. Sometimes it takes a little while to become live. Also, if you have opened that url recently, you might need to clear your browser cache to see the changes right away.
